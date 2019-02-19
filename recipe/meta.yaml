@@ -1,4 +1,4 @@
-{% set version = '0.2.1' %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RationalExp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RationalExp/RationalExp_{{ version }}.tar.gz
-  sha256: e9fb780a2a3b5aeb95be1da3548f8bed73680e27329701345a384d86655f827d
+  sha256: ef3ad58b03a74834448f201d9c9d5f4e4d23f7aabac9916a38cbe9a1afd3a128
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
