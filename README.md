@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=RationalExp
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rationalexp-feedstock/blob/master/LICENSE.txt)
 
 Summary: We implement a test of the rational expectations hypothesis based on the marginal distributions of realizations and subjective beliefs from D'Haultfoeuille, Gaillac, and Maurel (2018) <doi:10.3386/w25274>. This test can be used in cases where realizations and subjective beliefs are observed in two different datasets that cannot be matched, or when they are observed in the same dataset. The package also computes the estimator of the minimal deviations from rational expectations than can be rationalized by the data. 
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-rationalexp` from the `conda-forge` channel can be achieved by add
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-rationalexp` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
